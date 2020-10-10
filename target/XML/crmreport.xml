@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="79.605">
+    <testcase classname="Alchemy CRM." name="Counting Dashlets" time="17.414">
+        <system-out><![CDATA[Given user is on the Alchemy CRM website....................................passed
+When user count the dashlets................................................passed
+Then user prints all dashlet titles and close browser.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy CRM." name="Create leads using parameterization" time="18.785">
+        <system-out><![CDATA[Given user is on the Alchemy CRM website1...................................passed
+When user navigate to the lead..............................................passed
+Then user creates new lead with the following details "Mr.", "FirstName01", "LastName01", "0001".passed
+And user navigates to view leads and close browser..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy CRM." name="Schedule a meeting and invite members" time="20.761">
+        <system-out><![CDATA[Given user is on the Alchemy CRM website2...................................passed
+When user navigates to schedule meeting.....................................passed
+Then user enter details for meeting "Subject001", "10/10/2020", "11/10/2020", "Max", "allen", "abc".passed
+And user verifies the created meeting with "Subject001" and close browser...passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy CRM." name="Create a Product" time="22.225">
+        <system-out><![CDATA[Given user is on the Alchemy CRM website3...................................passed
+When user navigates to products.............................................passed
+Then user enter details for new product "NewProduct01" and "100"............passed
+And user verifies created record "NewProduct01" and close browser...........passed
+]]></system-out>
+    </testcase>
+</testsuite>

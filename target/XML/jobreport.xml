@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="174.031">
+    <testcase classname="Testing Job Board Page" name="create a new user" time="25.684">
+        <system-out><![CDATA[Given Open a browser........................................................passed
+Then Login to jobs page.....................................................passed
+And Locate the left hand menu and Click on Menu Item........................passed
+And Click the Add New button................................................passed
+Then Fill in the details and submit the form................................passed
+And Verify user was created and close browser...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Job Board Page" name="Searching for Jobs using xpath" time="12.107">
+        <system-out><![CDATA[Given Open a alchemy browser................................................passed
+Then Navigate to Job site...................................................passed
+And Find the Keywords search input field and change job.....................passed
+Then Find the filter to show only full time jobs............................passed
+And Find the title of job and print and close browser.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Job Board Page" name="Posting a job using parameterization" time="31.735">
+        <system-out><![CDATA[Given Open a browser1.......................................................passed
+Then Navigate to post a job page............................................passed
+And Enter "Cucumber/BDD Tester", "Hyderabad" and "IBM"......................passed
+And Click on submit.........................................................passed
+Then navigate to Job Page...................................................passed
+And Confirm "Cucumber/BDD Tester" Lisiting as shown and close browser.......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Job Board Page" name="Using Examples table to post a job" time="103.899">
+        <system-out><![CDATA[Given Open a browser2.......................................................passed
+Then Navigate to post a job page2...........................................passed
+And Enter Example "Test1@IBM1.com", "Selenium/BDD4", "Bangalore" and "IBM"..passed
+And Click on submit2........................................................passed
+Then navigate to Job Page2..................................................passed
+And Confirm Lisiting and close browser......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

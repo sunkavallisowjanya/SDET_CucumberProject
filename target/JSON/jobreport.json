@@ -1,0 +1,400 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-09T11:36:38.011Z",
+        "line": 4,
+        "name": "create a new user",
+        "description": "",
+        "id": "testing-job-board-page;create-a-new-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9061597500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open a browser",
+            "match": {
+              "location": "stepDefinitions.jobBoard.Open_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6736318500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Login to jobs page",
+            "match": {
+              "location": "stepDefinitions.jobBoard.Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3842545600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Locate the left hand menu and Click on Menu Item",
+            "match": {
+              "location": "stepDefinitions.jobBoard.click_on_left_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1458726900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click the Add New button",
+            "match": {
+              "location": "stepDefinitions.jobBoard.locate_the_Add_New_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2250818200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Fill in the details and submit the form",
+            "match": {
+              "location": "stepDefinitions.jobBoard.form_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2213311500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify user was created and close browser",
+            "match": {
+              "location": "stepDefinitions.jobBoard.verify_user()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jobBoard"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-09T11:37:03.729Z",
+        "line": 12,
+        "name": "Searching for Jobs using xpath",
+        "description": "",
+        "id": "testing-job-board-page;searching-for-jobs-using-xpath",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7333696400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Open a alchemy browser",
+            "match": {
+              "location": "stepDefinitions.jobBoard.Open_alchemy_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1751265500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Navigate to Job site",
+            "match": {
+              "location": "stepDefinitions.jobBoard.navigate_job_site()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154008500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Find the Keywords search input field and change job",
+            "match": {
+              "location": "stepDefinitions.jobBoard.keywords_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 281008100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Find the filter to show only full time jobs",
+            "match": {
+              "location": "stepDefinitions.jobBoard.filter_fulltime_jobs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2579332400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Find the title of job and print and close browser",
+            "match": {
+              "location": "stepDefinitions.jobBoard.title_of_job()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jobBoard"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-09T11:37:15.890Z",
+        "line": 19,
+        "name": "Posting a job using parameterization",
+        "description": "",
+        "id": "testing-job-board-page;posting-a-job-using-parameterization",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9519425700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Open a browser1",
+            "match": {
+              "location": "stepDefinitions.jobBoard.open_a_broswer1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7403593600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Navigate to post a job page",
+            "match": {
+              "location": "stepDefinitions.jobBoard.navigate_job_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10570987200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Enter \"Cucumber/BDD Tester\", \"Hyderabad\" and \"IBM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber/BDD Tester",
+                  "offset": 7
+                },
+                {
+                  "val": "Hyderabad",
+                  "offset": 30
+                },
+                {
+                  "val": "IBM",
+                  "offset": 46
+                }
+              ],
+              "location": "stepDefinitions.jobBoard.enter_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3275532300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on submit",
+            "match": {
+              "location": "stepDefinitions.jobBoard.submit_the_form()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 722128200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "navigate to Job Page",
+            "match": {
+              "location": "stepDefinitions.jobBoard.gotojobpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 232377100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Confirm \"Cucumber/BDD Tester\" Lisiting as shown and close browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cucumber/BDD Tester\"",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinitions.jobBoard.jobconfirm(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jobBoard"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-09T11:37:47.647Z",
+        "line": 37,
+        "name": "Using Examples table to post a job",
+        "description": "",
+        "id": "testing-job-board-page;using-examples-table-to-post-a-job;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36584582500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Open a browser2",
+            "match": {
+              "location": "stepDefinitions.jobBoard.open_a_broswer2()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51152189400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Navigate to post a job page2",
+            "match": {
+              "location": "stepDefinitions.jobBoard.go_to_the_Jobs_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10641967300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Enter Example \"Test1@IBM1.com\", \"Selenium/BDD4\", \"Bangalore\" and \"IBM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test1@IBM1.com",
+                  "offset": 15
+                },
+                {
+                  "val": "Selenium/BDD4",
+                  "offset": 33
+                },
+                {
+                  "val": "Bangalore",
+                  "offset": 50
+                },
+                {
+                  "val": "IBM",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinitions.jobBoard.enter_Example_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2590151200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Click on submit2",
+            "match": {
+              "location": "stepDefinitions.jobBoard.submit_the_form2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2820246200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "navigate to Job Page2",
+            "match": {
+              "location": "stepDefinitions.jobBoard.gotojobpage1()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 107699600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Confirm Lisiting and close browser",
+            "match": {
+              "location": "stepDefinitions.jobBoard.verification()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jobBoard"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Job Board Page",
+    "description": "",
+    "id": "testing-job-board-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/job.feature",
+    "tags": [
+      {
+        "name": "@jobBoard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

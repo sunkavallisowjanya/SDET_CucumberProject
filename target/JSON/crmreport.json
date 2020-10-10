@@ -1,0 +1,332 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-08T09:54:12.429Z",
+        "line": 4,
+        "name": "Counting Dashlets",
+        "description": "",
+        "id": "alchemy-crm.;counting-dashlets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15061076800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the Alchemy CRM website",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1737242000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user count the dashlets",
+            "match": {
+              "location": "stepDefinitions.crm.user_count_the_dashlets()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 534633200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user prints all dashlet titles and close browser",
+            "match": {
+              "location": "stepDefinitions.crm.user_prints_all_dashlet_titles()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-08T09:54:29.879Z",
+        "line": 9,
+        "name": "Create leads using parameterization",
+        "description": "",
+        "id": "alchemy-crm.;create-leads-using-parameterization",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13021787200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on the Alchemy CRM website1",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 981633500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user navigate to the lead",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigate_to_the_lead()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4086366500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user creates new lead with the following details \"Mr.\", \"FirstName01\", \"LastName01\", \"0001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr.",
+                  "offset": 50
+                },
+                {
+                  "val": "FirstName01",
+                  "offset": 57
+                },
+                {
+                  "val": "LastName01",
+                  "offset": 72
+                },
+                {
+                  "val": "0001",
+                  "offset": 86
+                }
+              ],
+              "location": "stepDefinitions.crm.user_creates_new_lead(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 689150200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user navigates to view leads and close browser",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigates_to_view_leads()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-08T09:54:48.688Z",
+        "line": 15,
+        "name": "Schedule a meeting and invite members",
+        "description": "",
+        "id": "alchemy-crm.;schedule-a-meeting-and-invite-members",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11632436600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on the Alchemy CRM website2",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website2()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2730798100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user navigates to schedule meeting",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigates_to_schedule_meeting()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4533893400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter details for meeting \"Subject001\", \"10/10/2020\", \"11/10/2020\", \"Max\", \"allen\", \"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Subject001",
+                  "offset": 32
+                },
+                {
+                  "val": "10/10/2020",
+                  "offset": 46
+                },
+                {
+                  "val": "11/10/2020",
+                  "offset": 60
+                },
+                {
+                  "val": "Max",
+                  "offset": 74
+                },
+                {
+                  "val": "allen",
+                  "offset": 81
+                },
+                {
+                  "val": "abc",
+                  "offset": 90
+                }
+              ],
+              "location": "stepDefinitions.crm.enter_new_meeting_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1853199800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verifies the created meeting with \"Subject001\" and close browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Subject001",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.crm.user_verifies_the_created_meeting(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-08T09:55:09.468Z",
+        "line": 29,
+        "name": "Create a Product",
+        "description": "",
+        "id": "alchemy-crm.;create-a-product;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14242339300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user is on the Alchemy CRM website3",
+            "match": {
+              "location": "stepDefinitions.crm.user_is_on_the_Alchemy_CRM_website3()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3498035200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user navigates to products",
+            "match": {
+              "location": "stepDefinitions.crm.user_navigates_to_products()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2535740100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user enter details for new product \"NewProduct01\" and \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NewProduct01",
+                  "offset": 36
+                },
+                {
+                  "val": "100",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.crm.user_enter_details_for_new_product_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1945343800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user verifies created record \"NewProduct01\" and close browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NewProduct01",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.crm.user_verifies_created_record(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@suiteCRM"
+          }
+        ]
+      }
+    ],
+    "name": "Alchemy CRM.",
+    "description": "",
+    "id": "alchemy-crm.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/crm.feature",
+    "tags": [
+      {
+        "name": "@suiteCRM",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

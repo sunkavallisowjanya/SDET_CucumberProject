@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="179.704">
+    <testcase classname="Alchemy HRM." name="Creating a job vacancy for DevOPS Engineer" time="19.178">
+        <system-out><![CDATA[Given user login to the OrangeHRM Page......................................passed
+When user Navigate to vacancies menu from Recruitment page..................passed
+Then user adds a Job Vacancy................................................passed
+And user verifies the added vacancy and close browser.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="adding a candidate for recruitment" time="23.622">
+        <system-out><![CDATA[Given user login to the OrangeHRM Page1.....................................passed
+When user Navigate to Recruitment page......................................passed
+Then user adds a candidate..................................................passed
+And user verifies added candidate and close browser.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Add multiple employees" time="43.06">
+        <system-out><![CDATA[Given user login to the OrangeHRM Page2.....................................passed
+When user navigates to PIM page.............................................passed
+Then user adds a employee with details "UserF01", "UserL01".................passed
+And user enters further details "User01", "Enabled".........................passed
+Then user verifies the created employee "UserF01", "UserL01" and close browser.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Add multiple employees 2" time="39.639">
+        <system-out><![CDATA[Given user login to the OrangeHRM Page2.....................................passed
+When user navigates to PIM page.............................................passed
+Then user adds a employee with details "UserF02", "UserL02".................passed
+And user enters further details "User02", "Enabled".........................passed
+Then user verifies the created employee "UserF02", "UserL02" and close browser.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Creating multiple vacancies" time="25.109">
+        <system-out><![CDATA[Given user login to the OrangeHRM Page3.....................................passed
+When user Navigate to vacancies menu from Recruitment page2.................passed
+Then user adds a candidate with details "newJobVacancyName77", "FirstName1 LastName1", "Automation Test Engineer".passed
+And user verifies added candidate with details "newJobVacancyName77", "FirstName1 LastName1", "Automation Test Engineer" and close browser.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Alchemy HRM." name="Creating multiple vacancies 2" time="28.582">
+        <system-out><![CDATA[Given user login to the OrangeHRM Page3.....................................passed
+When user Navigate to vacancies menu from Recruitment page2.................passed
+Then user adds a candidate with details "newJobVacancyName99", "FirstName1 LastName1", "Automation Test Engineer".passed
+And user verifies added candidate with details "newJobVacancyName99", "FirstName1 LastName1", "Automation Test Engineer" and close browser.passed
+]]></system-out>
+    </testcase>
+</testsuite>
